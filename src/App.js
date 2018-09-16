@@ -63,12 +63,10 @@ class App extends Component {
     }
     
     window.addEventListener('resize', () => {
-      if (window.matchMedia('(min-width: 750px)').matches) {
-        console.log('Screen width is at least 750px');
+      if (window.matchMedia('(min-width: 750px)').matches) {       
         this.setState({onMobile: false, isListOpen: true, isPanelOpen: true, userSelectedLI: ''})
 
-      } else {
-        console.log('Screen less than 750px');
+      } else {        
         this.setState({onMobile: true, isListOpen: true, isPanelOpen: false, userSelectedLI: ''})
       }
 
