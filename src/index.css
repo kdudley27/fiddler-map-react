@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
 html,body {
   margin: 0;
   padding: 0;
@@ -5,7 +7,6 @@ html,body {
   /* font-size: 1em; */
   font-family: 'Roboto', Arial, sans-serif;
 }
-
 
 .appWrapper {
   top: 0;
@@ -19,16 +20,6 @@ html,body {
   width: 100vw;
   height: 100vh;
 }
-
-
-@font-face {
-    font-family: 'astrovegan_personal_useRg';
-    src: url('./fonts/astrovegan_personal_use-webfont.woff2') format('woff2'),
-         url('./fonts/astrovegan_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 .header {
   position: absolute;
@@ -51,7 +42,7 @@ html,body {
   margin-top: -1px;
   margin-left: 414px;
   justify-content: space-around;
-  font-family: 'astrovegan_personal_useRg', Arial, sans-serif;
+  font-family: 'Shadows Into Light', cursive;
   color: #000; /*#8b4944; */
   font-size: 36px;
   text-shadow: 0 0 10px #FFFFFF, 0px 0px 5px #FFC57D, 0px 0px 5px #FFC57D;

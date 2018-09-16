@@ -238,7 +238,7 @@ class App extends Component {
     return (<div className='App'>
 
       <header className='header' role="banner">
-        <h2 className='header-title'>Old Fiddler's Convention: Galax</h2>
+        <h2 className='header-title'>My Favorite Places to Eat</h2>
       </header>
       <main>
         <section>
