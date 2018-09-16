@@ -13,7 +13,7 @@ class BottomToggle extends React.Component {
                 aria-label={this.props.isListOpen? 'Showing List': 'Showing Map'}
                 aria-expanded={this.props.isListOpen? 'true' : 'false'}
               >
-                {this.props.isListOpen? 'show map' : 'show list'}
+                {this.props.isListOpen? 'show map' : 'show places'}
               </button>
             </div>
           </div>

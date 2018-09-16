@@ -5,41 +5,38 @@ class ListItem extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isListItemOpen: false, // list item built custom to resemble accordian behavior - is it open
-      listItem: '' // holds the venueID of the list item that was clicked on
+      isListItemOpen: false, 
+      listItem: '' 
     }
   }
 
 
   handleListClick = (e) => {
     e.stopPropagation();
-    // console.log(e.target.getAttribute('js-data'));
-
-    // overcome Reacts lack of event delegation with a simple js-data attribute set to the id of the restaurant the element was created to display
+   
     this
       .props
       .getListId(e.target.getAttribute('js-data'))
-
-    // if the user is viewing on a small screen we want the marker to keep bounce and not timeout because the list is open and the user can't see the map behind it until they close the list
+    
     if (this.props.onMobile) {
       this.setState({
-        isListItemOpen: true, // list items will never close on click
+        isListItemOpen: true, 
         listItem: e
           .target
-          .getAttribute('js-data') // set the venueID of the LI that was clicked in state
+          .getAttribute('js-data') // set the venueID 
       })
-      return // we are done
+      return 
     }
 
-    // if the user is not on mobile
+    
     this.setState({
-      isListItemOpen: !this.state.isListItemOpen, // the list items act like accordians open/close
+      isListItemOpen: !this.state.isListItemOpen, 
       listItem: e
         .target
-        .getAttribute('js-data') // set the venueID of the LI that was clicked in state
+        .getAttribute('js-data') // set the venueID 
     })
 
-    // if we are not on mobile and a list item was clicked, we want the marker to change color and animate breifly, then return to it's original state
+   
     setTimeout(() => {
       this
         .props

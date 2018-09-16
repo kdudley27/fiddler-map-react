@@ -1,7 +1,6 @@
 import React from 'react'
 
-class FilterComponent extends React.Component {
-  // get the user input and send it back to our parent component
+class FilterComponent extends React.Component {  
   handleChange(e) {
     const query = e.target.value;
     this.props.filterInput(query);
