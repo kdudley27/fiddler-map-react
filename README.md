@@ -8,7 +8,8 @@ To view this on your local machine download the repository then type `npm instal
 
 ## What You're Getting
 
-This is an app written in React using the Google Maps API, and the FourSquare API. I also use the `google-maps-react' library to help me load the map. https://github.com/fullstackreact/google-maps-react
+This is an app using React, the Google Maps API, and the FourSquare API. I also use the `google-maps-react` library to help me load the map. https://github.com/fullstackreact/google-maps-react 
+
 It shows some of my favorite places to visit in my home town.
 
 ## Create React App
