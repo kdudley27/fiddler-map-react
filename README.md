@@ -1,6 +1,6 @@
 # React Neighborhood Map
 
-This is an app using React, the [Google Maps API](https://cloud.google.com/maps-platform/), and the [FourSquare API](https://developer.foursquare.com/)  I also use the [google-maps-react](https://github.com/fullstackreact/google-maps-react) library to help me load the map.
+This is an app using [React](https://reactjs.org/), the [Google Maps API](https://cloud.google.com/maps-platform/), and the [FourSquare API](https://developer.foursquare.com/)  I also use the [google-maps-react](https://github.com/fullstackreact/google-maps-react) library to help me load the map.
 
 It shows some of my favorite places to visit in my home town. 
 
